@@ -1,0 +1,26 @@
+:root{
+  --header: #2C3E50;
+  --jumbotron-about: #1ABC9C;
+  --house: #BA4B63;
+  --cake: #1EA4B6;
+  --circus: #140F0F;
+  --game: #1C83C1;
+  --secure: #0E38B5;
+  --submarine: #CCB2A3;
+  --location: #3A546D;
+  --footer: #2C3E50;
+}
+
+header{
+  background-color: var(--header);
+  height: 100px;
+}
+
+[class^="container"]{
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+[class^="col"]{
+  border: 1px solid red;
+}

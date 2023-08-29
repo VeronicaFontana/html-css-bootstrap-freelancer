@@ -11,16 +11,29 @@
   --footer: #2C3E50;
 }
 
+[class^="container"]{
+  border: 1px solid rgb(0, 0, 0);
+}
+
+[class^="col"]{
+  border: 1px solid red;
+}
+
 header{
   background-color: var(--header);
   height: 100px;
 }
 
-[class^="container"]{
-  border: 1px solid rgb(0, 0, 0);
+.jumbotron{
+  background-color: var(--jumbotron-about);
+  height: 500px;
+  width: 100vw;
+}
+
+.container-v{
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
 }
 
 
-[class^="col"]{
-  border: 1px solid red;
-}

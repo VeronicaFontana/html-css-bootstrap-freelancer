@@ -19,12 +19,16 @@
   border: 1px solid red;
 }
 
+[class^="box"]{
+  height: 100px;
+}
+
 header{
   background-color: var(--header);
   height: 100px;
 }
 
-.jumbotron{
+.jumbotron, .about{
   background-color: var(--jumbotron-about);
   height: 500px;
   width: 100vw;
@@ -36,4 +40,37 @@ header{
   width: 90%;
 }
 
+.container-about-v{
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 80%;
+}
+
+.colored-text-v{
+  color: var(--header);
+}
+
+.box-house{
+  background-color: var(--house);
+}
+
+.box-cake{
+  background-color: var(--cake);
+}
+
+.box-circus{
+  background-color: var(--circus);
+}
+
+.box-game{
+  background-color: var(--game);
+}
+
+.box-secure{
+  background-color: var(--secure);
+}
+
+.box-submarine{
+  background-color: var(--submarine);
+}
 

@@ -139,7 +139,7 @@
             <div class="col"><p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p></div>
           </div>
           <div class="text-center">
-            <button class="hover"><i class="fa-solid fa-download"></i> Download</button>
+            <button class="download hover"><i class="fa-solid fa-download"></i> Download</button>
           </div>
         </div>
       </div>
@@ -152,28 +152,24 @@
             <div class="col colored-text-v text-center text-uppercase fw-bold">
               <h2>Contact me</h2>
             </div>
-            <div class="col text-center">
-              <span>img</span>
+            <div class="star-section my-3 d-flex align-items-center justify-content-center ">
+              <div class="star-line-dark"></div>
+              <i class="fa-solid fa-star mx-2 fs-3"></i>
+              <div class="star-line-dark"></div>
             </div>
           </div>
-          <div class="row flex-column my-3">
-            <div class="col">
-              <span>Name</span>
-            </div>
-            <hr>
-            <div class="col">
-              <span>Email Address</span>
-            </div>
-            <hr>
-            <div class="col">
-              <span>Phone Number</span>
-            </div>
-            <hr>
-            <div class="col">
-              <span>Message</span>
-            </div>
-            <hr>
-          </div>
+          <form action="#">
+            <input type="text" class="form-control" name="nome" id="nome" placeholder="Name">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            <input type="text" class="form-control" name="numero" id="numero" placeholder="Phone Number">
+            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit" id="send" name="send" class=" hover"><span>Send</span></button>
+
+
+
+
+
+          </form>
           <div>
             <button class="rounded">Send</button>
           </div>

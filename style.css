@@ -9,10 +9,6 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
-[class^="col"]{
-  border: 1px solid red;
-}
-
 [class^="box"]{
   height: 100px;
 }
@@ -36,6 +32,7 @@ button{
 
 header button i{
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 header li:hover{
@@ -110,6 +107,35 @@ h1{
 
 [class^="box"]:hover .box-hover{
   display: block;
+}
+
+#nome, #email, #numero, #message{
+  margin: 10px 0;
+  padding-left: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+#nome::placeholder, #email::placeholder, #numero::placeholder, #message::placeholder{
+  color: black;
+}
+
+#message{
+  width: 100%;
+  border-top: none;
+}
+
+#send{
+  background-color: #1ABC9C;
+  padding: 10px 15px;
+  border: 1px solid #1ABC9C;
+}
+
+#send:hover, .download:hover{
+  background-color: white;
+  color: #1ABC9C;
 }
 
 .location{

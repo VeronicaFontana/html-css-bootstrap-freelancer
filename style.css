@@ -5,18 +5,15 @@
   --footer: #2C3E50;
 }
 
-[class^="container"]{
-  border: 1px solid rgb(0, 0, 0);
-}
-
-[class^="box"]{
-  height: 100px;
+.colored-text-v{
+  color: var(--header);
 }
 
 .hover{
   cursor: pointer;
 }
 
+/* HEADER */
 header{
   background-color: var(--header);
   height: 100px;
@@ -39,6 +36,7 @@ header li:hover{
   color: var(--jumbotron-about);
 }
 
+/* JUMBOTRON */
 .jumbotron, .about{
   background-color: var(--jumbotron-about);
 }
@@ -52,17 +50,8 @@ h1{
   font-size: 2rem;
 }
 
-.star-line, .star-line-dark{
-  height: 4px;
-  width: 90px;
-}
-
 .star-line{
   background-color: white;
-}
-
-.star-line-dark{
-  background-color: var(--header);
 }
 
 .container-v{
@@ -71,20 +60,14 @@ h1{
   width: 90%;
 }
 
-.container-about-v{
-  margin: 0 auto;
-  max-width: 1100px;
-  width: 80%;
+/* PORTFOLIO */
+.star-line, .star-line-dark{
+  height: 4px;
+  width: 90px;
 }
 
-.container-contact-me-v{
-  margin: 0 auto;
-  max-width: 1100px;
-  width: 70%;
-}
-
-.colored-text-v{
-  color: var(--header);
+.star-line-dark{
+  background-color: var(--header);
 }
 
 [class^="box"]{
@@ -107,6 +90,20 @@ h1{
 
 [class^="box"]:hover .box-hover{
   display: block;
+}
+
+/* ABOUT */
+.container-about-v{
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 80%;
+}
+
+/* CONTACT */
+.container-contact-me-v{
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 70%;
 }
 
 #nome, #email, #numero, #message{
@@ -138,14 +135,28 @@ h1{
   color: #1ABC9C;
 }
 
+/* INFO */
 .location{
   background-color: var(--location);
 }
 
+.location i{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px 15px;
+  margin: 0 5px;
+}
+
+.location i:first-child{
+  padding: 15px 20px;
+}
+
+/* FOOTER */
 footer{
   background-color: var(--footer);
 }
 
+/* REPONSIVE */
 @media screen and (min-width: 768px){
   h1{
     font-size: 3.5rem;
@@ -161,5 +172,9 @@ footer{
 
   .star-line, .star-line-dark{
     width: 200px;
+  }
+
+  .location div span:first-child{
+    font-size: 1.8rem;
   }
 }

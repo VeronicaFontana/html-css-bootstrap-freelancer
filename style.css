@@ -1,12 +1,6 @@
 :root{
   --header: #2C3E50;
   --jumbotron-about: #1ABC9C;
-  --house: #BA4B63;
-  --cake: #1EA4B6;
-  --circus: #140F0F;
-  --game: #1C83C1;
-  --secure: #0E38B5;
-  --submarine: #CCB2A3;
   --location: #3A546D;
   --footer: #2C3E50;
 }
@@ -60,18 +54,17 @@ h1{
   font-size: 2rem;
 }
 
-.star-line{
-  background-color: white;
+.star-line, .star-line-dark{
   height: 4px;
   width: 90px;
 }
 
-.location{
-  background-color: var(--location);
+.star-line{
+  background-color: white;
 }
 
-footer{
-  background-color: var(--footer);
+.star-line-dark{
+  background-color: var(--header);
 }
 
 .container-v{
@@ -96,28 +89,34 @@ footer{
   color: var(--header);
 }
 
-.box-house{
-  background-color: var(--house);
+[class^="box"]{
+  height: 100%;
+  width: 100%;
 }
 
-.box-cake{
-  background-color: var(--cake);
+.box-hover{
+  background-color: #1abc9c4e;
+  top: 0;
+  display: none;
 }
 
-.box-circus{
-  background-color: var(--circus);
+.fa-plus{
+  font-size: 4rem;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.box-game{
-  background-color: var(--game);
+[class^="box"]:hover .box-hover{
+  display: block;
 }
 
-.box-secure{
-  background-color: var(--secure);
+.location{
+  background-color: var(--location);
 }
 
-.box-submarine{
-  background-color: var(--submarine);
+footer{
+  background-color: var(--footer);
 }
 
 @media screen and (min-width: 768px){
@@ -125,11 +124,15 @@ footer{
     font-size: 3.5rem;
   }
 
+  h2{
+    font-size: 2.5rem;
+  }
+
   .jumbotron p{
     font-size: 1.5rem;
   }
 
-  .star-line{
+  .star-line, .star-line-dark{
     width: 200px;
   }
 }

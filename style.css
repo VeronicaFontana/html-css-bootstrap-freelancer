@@ -23,9 +23,28 @@
   height: 100px;
 }
 
+.hover{
+  cursor: pointer;
+}
+
 header{
   background-color: var(--header);
   height: 100px;
+}
+
+header button{
+  background-color: var(--header);
+  padding: 5px 15px;
+  color: #7F8082;
+  border: 1px solid white;
+}
+
+header button i{
+  font-size: 1.5rem;
+}
+
+header li:hover{
+  color: var(--jumbotron-about);
 }
 
 .jumbotron, .about{

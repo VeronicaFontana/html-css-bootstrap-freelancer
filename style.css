@@ -37,6 +37,12 @@ header li:hover{
 }
 
 /* JUMBOTRON */
+.jumbotron{
+  padding-top: 110px;
+}
+
+
+
 .jumbotron, .about{
   background-color: var(--jumbotron-about);
 }
